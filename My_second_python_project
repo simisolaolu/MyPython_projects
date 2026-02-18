@@ -1,0 +1,224 @@
+"""
+1. Shopping Cart Total
+Context Many programs need to calculate totals from stored values. Building this pattern is fundamental.
+Requirements;
+"""
+
+prices = [12.50, 8.99,15.00, 6.75, 22.30]
+total = 0
+# for price in prices:
+   #total = total + price
+
+# print(prices) #original list
+# print(f"Total cost:{total}") #total cost
+
+"""
+2. Temperature Converter
+Context Converting between units requires applying a formula to each item in a list.
+Requirements
+"""
+
+# celsius = [0, 10, 20, 30, 40]
+# # for temperature in celsius:
+    
+# fahrenheit = celsius[-2] * 9/5 + 32
+#     #print(f"{temperature}°C = {fahrenheit}°F")
+
+# print(f"{celsius[-2]}°C = {fahrenheit}°F")
+
+
+# 3. List Doubler
+# Context Building a new list based on transforming an existing list is a common pattern.
+# Requirements
+
+
+# numbers = [5, 10, 15, 20]
+# doubled = []
+# for number in numbers:
+#     number = number * 2
+#     doubled.append(number)
+# print(doubled)
+# print(f"Original: {numbers} \n Doubled: {doubled}")
+
+#.4
+countdown = []
+counter = 10 
+# iterate until counter is zero
+# while counter > 0: 
+#     countdown.append(counter) 
+#     counter -= 1 #subtract one from each 
+
+# print(countdown)
+
+# 5. Parallel Lists Display
+# Context Often you have related data in separate lists that need to be displayed together using the same
+# index.
+# Requirements
+
+items = ['bread', 'milk', 'eggs', 'butter']
+prices = [2.50, 3.99, 4.25, 5.50]
+for i in range(len(items)):
+    item_name = items[i]
+    item_price = prices[i]
+    for grade in grades:
+        print(f"students {i} achived {grade[i]}")
+    #print(f"{item_name} cost {item_price}")
+
+
+# 6. Grade Point Average
+# Context Calculating averages from stored data is essential for statistics and analysis.
+# Requirements
+
+grades = [4, 3, 4, 2, 3] # (where 4=A, 3=B, 2=C)
+total = 0
+count = 0
+# for grade in grades:
+#     total = total + grade
+#     count = count + 1
+#     gpa = total / count
+
+# print(f"GPA: {gpa}") #print GPA
+# print(f"GPA: {gpa:.2f}") # print GPA in 2 decimal point
+
+# 7. 
+
+# List Shifter
+# Context Rearranging list elements is a common data manipulation task that requires careful index
+# management.
+# Requirements
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+#print(numbers[-5:-2])
+last_three = []
+# for i in range(3):
+#     last_three.append(numbers[len(numbers)-3 +i])
+
+# result = []
+# result = last_three
+# for i in range(0,len(numbers)-3):
+#     result.append(numbers[i])
+# print(numbers)
+# print(result)
+                    
+
+#13. Matrix Builder with Pattern
+# Context Building structured 2D data requires nested loops and careful calculation.
+# Requirements
+
+# 1. Create an empty list called matrix.
+
+matrix = []
+#range 4 is (0,1,2,3)
+# for row in range(4):
+#     current_row = []
+#     for col in range(5):
+#         current_row.append((row * 5) + col)
+#     matrix.append(current_row)
+#     print(current_row)
+    
+# Goal: Write a for loop that iterates from 1 to 10. Inside the loop, use an if/else statement to check:
+
+# If the number is even, print "[Number] is even."
+
+# If the number is odd, print "[Number] is odd."
+
+# Hint: Use the modulo operator (%) to check for even/odd. An even number divided by 2 has a remainder of 0.
+
+even = []
+odd = []
+
+# for number in range(1,11):
+#     if number % 2 == 0:
+#         even.append(number)
+#         print(f"{number} is even.")
+#     else:
+#         odd.append(number)
+#         print(f"{number} is odd.")
+
+# print(f"{odd} are odd.")
+# print(f"{even} are even.")
+  
+
+# 1. Start-up banner
+# Print the line below when the programme starts:
+
+# Astronomy Observation Log
+
+print("astronomy observation log")
+
+#2. Capture a single observation
+#Create two variables, then print a one-line summary.
+
+#Create target_name and seeing_score
+
+target_name = input("What is target name? ")
+seeing_score = int(input("what is seeing score between(0-10)? "))
+print(f"{target_name} with seeing score {seeing_score}")
+
+# 3.Nightly star counts: list and average
+#Work with a list and compute an average.
+
+#Create a list named star_counts with the integers [42, 58, 37, 61, 55]
+star_counts = [42,58,37,61,55]
+#average = total / count
+total = 0
+count = 0
+for star in star_counts:
+    total = star + total
+    count = count + 1
+    average_count = total / count
+# print(total) # check my code
+# print(count) # check my code
+# Print both the original list and the average:
+print(f"{star_counts}\n {average_count}")
+
+# 4. Loop over observations
+# Use a loop to produce structured lines
+
+# Reuse star_counts from Task 3
+star_counts = [42,58,37,61,55]
+total_stars = 0
+for star in star_counts:
+    total_stars = star + total
+    #print(star) # checking my code
+    print(f"Night 1: {star} stars")
+
+#After the loop, print the total number of stars counted across all nights using a running total you computed in the loop
+print(f"Total star observed: {total}")
+
+#5. Build a simple report string with a loop
+#Create a single multi-line string from a list, using a loop only.
+
+#Starting from star_counts, create a string named report that looks exactly like this when printed:#
+
+star_counts = [42,58,37,61,55]
+for report in star_counts:
+    report = f"Night 1 recorded {report}"
+    print(report)
+
+#. Dictionary record with nested list
+# Store structured session data in a dictionary, then compute an average using only values retrieved from
+# that dictionary.
+
+#Create a dictionary named session_record with these keys and values:
+session_record = {
+    "observer": "Riley",
+    "session_id": 90314, #(an integer)
+    "magnitudes": [2.1, 1.8, 2.4, 1.9, 2.2] # (a list of floats)
+}
+#print(session_record["magnitudes"])
+#average_magnitude = total / count
+
+total = 0
+count = 0
+for mag in session_record["magnitudes"]:
+    total = mag + total
+    count = count + 1
+    average_magnitude = total/count
+print(average_magnitude)
+
+#Print the three-line report below using only values accessed from session_record:
+
+#print(f" observer: {session_record["observer"]}\n Session ID: {session_record["session_id"]}\n Average magnitude: {average_magnitude:.2f}")
+print(f" Observer: {session_record["observer"]}")
+print(f"Session ID: {session_record["session_id"]}")
+print(f"Average Magnitude: {average_magnitude:.2f}")
