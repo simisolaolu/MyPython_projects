@@ -1,0 +1,187 @@
+# 1. User Profile Generator
+#name="simi"
+age= 30
+are_student= True
+#summary = f'my name is {name}, I am {age} years old.My student status is {are_student}'
+
+#print(summary)
+
+# 2. Dynamic Welcome Message
+#Name = input("what is your name ?")
+#print(input("what is your name"))
+#print(Name)
+#print(f"hello {Name}, welcome to programming")
+
+# 3. String Repetition for Banners
+single_character = "x"
+user_int = single_character * 8
+#print(user_int)
+
+# 4. Course Information Display
+course_code = "CS1234"
+course_year = 2020
+#print(f"course code: {course_code}, course_year: {course_year}")
+
+# 5. Simple "Mad Libs" Game
+#noun = input("your_noun")
+#verb = input("your_verb")
+#adjective = input("your_adjective")
+#print(noun)
+#print(f"The {adjective} {noun} will {verb} tommorrow")
+
+# 6. Age Projection Calculator
+User_current_age = "40"
+Int_data_type = int("40")
+#print(Int_data_type + 10)
+##print(Int_data_type - 5)
+
+# 7. Coffee Shop Bill Calculator
+single_coffee_cup = float(5.60)
+#user_order = int(input('how many coffee cup do you wish to buy?'))
+#total_order = (user_order * single_coffee_cup)
+#print(f"The total cost for 7 coffee is {total_order}")
+
+# 8. Celsius to Fahrenheit Converter
+#temp_in_celsius = float(input(" what is the temp in celsius?"))
+#temp_in_fahrenheit = (temp_in_celsius * 1.8) + 32
+#print(f"{temp_in_celsius}°C = {temp_in_fahrenheit}")
+
+# 9. Restaurant Tip and Total
+#total_cost_of_a_meal = input("what is the total cost of a meal?")
+#convert_to_float = float(total_cost_of_a_meal)
+#Tip = float(0.2)
+#Tip_cost = (0.2 * convert_to_float)
+#Final_total = (convert_to_float + Tip_cost)
+#print(Final_total)
+#print(f" the original meal cost, tip amount and total cost are {convert_to_float},{Tip_cost} and {Final_total} respectively")
+
+# 10. Circle Geometry
+#radius = float(input("what is the radius of circle?"))
+pi = 3.14159
+#area = pi * radius ** 2
+#print(area)
+#circumference = 2 * pi * radius
+#print(circumference)
+#print(f"The area and circumference of the circle is {area} and {circumference} respectively")
+
+# 11. Seconds to Time Converter
+#total_duration_in_seconds = int(input("total duration in seconds"))
+#hours = (total_duration_in_seconds / 60) // 60
+#minutes = (total_duration_in_seconds // 60)
+#remaining_seconds = minutes % 60
+#print(hours)
+#print(minutes)
+#print(remaining_seconds)
+#print(f" {hours}:{minutes}:{remaining_seconds}")
+
+# 12. Simple Compound Interest Calculator
+#P = int(input("what is the initial principal amount?"))
+#r = float(input("what is the annual interst rate?"))
+#t = int(input("what is the number of years?"))
+#A = P * (1 + r)**t
+#final_amount = A
+#print(A)
+#print(f" NGN {A}")
+
+# 13. Body Mass Index (BMI) Application
+#User_height = float(input("what is user height in metres?"))
+#User_weight = float(input("what is the user weight in kilograms?"))
+#BMI = User_weight / (User_height * User_height)
+#print(BMI)
+#print(f"The user BMI is {BMI}")
+
+# 14. Paint Coverage and Leftovers
+
+standard_can_of_paint = int("11")
+#length = int(input("what is the length of rectangular wall? "))
+#width = int(input("what is the width of rectangular wall? "))
+#total_area = length * width
+#print(f"{total_area}m²")
+#number_of_full_cans = total_area // standard_can_of_paint
+#print(number_of_full_cans)
+#left_over_paint = total_area % standard_can_of_paint
+#print(f"{left_over_paint}m²")
+#print(f"The number of full cans of paint needed for the wall is {number_of_full_cans} and left over paint in can used is {left_over_paint}m²")
+
+# 15. Three-Digit Number Reversal
+# Ask the user to enter a three-digit integer.
+#num = int(input("Enter a three digit integer: "))
+
+# first = num// 1000
+# second = (num%1000)//100
+# third = (num%1000)%100//10
+# fourth = (num%1000)%100%10//1
+#print(f"{first}, {second}, {third}, {fourth}")
+
+
+
+# 16. Road Trip Cost and Logistics
+
+# car_fuel_efficiency_ = float(14)
+# fuel_tank_capacity = float(55)
+# cost_of_fuel = float(1.68)
+# #total_distance_of_trip = float(input("what is the total distance of trip in kilometres? "))
+
+# #Calculate and display a report with the following information:
+# #total_litres_of_fuel_required_for_the_trip = total_distance_of_trip / car_fuel_efficiency_
+# print(f"{total_litres_of_fuel_required_for_the_trip} litres")
+
+# #The number of full tanks of petrol needed.
+# number_of_full_tanks_of_petrol_needed = total_litres_of_fuel_required_for_the_trip // fuel_tank_capacity
+# print(number_of_full_tanks_of_petrol_needed)
+
+
+#The total monetary cost of fuel for the entire trip
+
+# # 17.
+# flour_for_12 = 250
+# sugar_for_12 = 175
+# butter_for_12 = 110
+
+# ##num = int(input("How many cookies you wush to make: "))
+
+# flour = round (flour_for_12/12 * num,2)
+# sugar = round (sugar_for_12/12 * num,2)
+# butter = round (butter_for_12/12 * num,1)
+
+# print(f' You will need {flour}g, {sugar}g sugar, {butter}g butter for {num} cookies.')
+
+# ls = []
+# ls.append(flour)
+# ls.append(sugar)
+# ls.append(butter)
+# for C in ls:
+#   print(C)
+  
+# 18. 24-Hour Modular Clock
+#ontext
+#Scheduling systems, simulations, and games often need to handle time calculations that wrap around a cycle. This is a direct and practical application of the modulus operator for cyclical arithmetic.
+#Requirement
+
+# current_hour = int(input("what is the current hour? "))
+# current_time = int(input("what is the number of hours to add to the current time? "))
+# new_time = (current_hour + current_time)
+# print(f"{current_hour+current_time}")
+# print(f"{new_time%24}:00")
+
+#19. Investment Doubling Time (Rule of 72)Context
+#Financial technology apps often provide quick estimates and projections. The Rule of 72 is a well-known mental shortcut for estimating how long an investment will take to double. This task involves implementing this rule and performing year calculations
+#Requirements
+
+# initial_investment_amount = float(input("What is initial Investment amount? "))
+# annual_interest = float(input('What is annual interest rate:'))
+# years = 72//annual_interest
+# current = 2025
+# print(f"{years + current}")
+
+# 20.Multi-Currency Exchange Desk
+#Context
+#Foreign exchange and e-commerce platforms must handle conversions between multiple currencies. This task involves creating a simple tool that uses predefined exchange rates to perform these conversions
+
+EUR = 1.18
+USD = 1.27 
+JPY = 191.50
+
+gbp = float(input('enter an amount in GBP: '))
+print(f"{gbp} is equivalent to {round (EUR * gbp)} EUR, {round (USD*gbp)} USD, {round (JPY*gbp)} JPY")
+
